@@ -1,0 +1,51 @@
+/* ページ全体のスタイル */
+body {
+    background-color: #f0f4f8;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 全体を囲むコンテナのスタイル */
+.container {
+    text-align: center;
+}
+
+/* ボタンの基本スタイル */
+#myButton {
+    background-color: #4A90E2;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+/* マウスがボタンに乗ったときのスタイル */
+#myButton:hover {
+    background-color: #357ABD;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* ボタンがクリックされた瞬間のスタイル */
+#myButton:active {
+    background-color: #2a659b;
+    transform: translateY(1px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 絵文字が表示されるエリアのスタイル */
+#emoji-display {
+    margin-top: 25px;
+    font-size: 60px;
+    min-height: 80px; /* 絵文字がなくても高さが変わりません */
+    line-height: 80px;
+}
